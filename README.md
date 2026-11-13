@@ -1,26 +1,25 @@
-<div align="center">
-  <img src="assets/logo-chatinho.jpg" alt="Logo do CHATinho" width="520">
+ <div align="center">
+  <img src="./assets/banner-chatinho.png" alt="Banner CHATinho" width="100%" />
 
   ![React Native](https://img.shields.io/badge/React_Native-F472B6?style=flat-square&logo=react&logoColor=white)
   ![Expo](https://img.shields.io/badge/Expo-EC4899?style=flat-square&logo=expo&logoColor=white)
 </div>
 
-## 🩷 Sobre
+## Sobre o projeto
 
-O **CHATinho** é um aplicativo simples de mensagens, inspirado no WhatsApp, desenvolvido com **React Native e Expo** para praticar navegação entre telas, passagem de parâmetros, componentes reutilizáveis e organização em camadas.
+O **CHATinho** é um aplicativo de mensagens desenvolvido em React Native com Expo, como atividade da disciplina de Desenvolvimento Mobile.
 
-## 🌸 Requisitos da atividade
+O projeto simula conversas entre contatos, permitindo visualizar mensagens e enviar novas mensagens. O objetivo é colocar em prática navegação entre telas, uso de componentes e separação de responsabilidades no código.
 
-- **HomeScreen:** pelo menos 4 contatos, com nome e opção de abrir a conversa, passando ID e nome.
-- **ChatScreen:** nome do contato, lista de mensagens, recebidas à esquerda e enviadas à direita, campo e botão de envio. O campo é limpo após enviar e mensagens vazias não são aceitas.
-- **Mensagem:** componente reutilizável com `mensagem` e `recebida`.
-- **MensagemRepository:** armazenamento em array (`id`, `contatoId`, `texto`, `recebida`), com `getMensagens()` e `adicionarMensagem()`.
-- **MensagemService:** regras de negócio com `getMensagens()` e `enviarMensagem()`, usando uma única instância.
-- **Navegação:** React Navigation com Stack Navigator, `navigation.navigate()` e `route.params`.
+## Funcionalidades
 
-As mensagens ficam **em memória**, sem API, MQTT ou banco de dados. Cada conversa exibe apenas suas mensagens; não é necessário mantê-las após reiniciar o aplicativo.
+- Lista de contatos na tela inicial.
+- Navegação entre contatos e conversas.
+- Exibição de mensagens enviadas e recebidas.
+- Campo para digitar e enviar mensagens.
+- Armazenamento das mensagens em memória.
 
-## 📁 Estrutura
+## Estrutura do projeto
 
 ```text
 src/
@@ -36,7 +35,9 @@ src/
 App.js
 ```
 
-## 🎀 Como executar
+## Como executar
+
+Clone o repositório e instale as dependências:
 
 ```bash
 git clone https://github.com/eduarda-freitass/CHATinho.git
@@ -45,4 +46,4 @@ npm install
 npx expo start
 ```
 
-Abra o aplicativo pelo **Expo Go**.
+Depois, abra o aplicativo usando o **Expo Go**.
