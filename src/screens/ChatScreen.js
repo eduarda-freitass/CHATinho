@@ -19,9 +19,14 @@ export default function ChatScreen({ route }) {
 
   const { contatoId, nome } = route.params;
 
-  const [mensagens, setMensagens] = useState(
-    mensagemService.getMensagens(contatoId)
-  );
+const [mensagens, setMensagens] = useState(
+  mensagemService.getMensagens(contatoId)
+);
+
+useEffect(() => {
+  setMensagens(mensagemService.getMensagens(contatoId));
+}, [contatoId]);
+
   const [texto, setTexto] = useState('');
   const [tecladoAberto, setTecladoAberto] = useState(false);
 
